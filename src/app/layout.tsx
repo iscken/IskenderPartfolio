@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "./globals.scss";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -11,6 +11,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+const montserratSans = localFont({
+  src: "./fonts/Montserrat-VariableFont_wght.ttf",
+  variable: "--font-montserrat-sans",
+  weight: "100-900",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${montserratSans.variable} ${geistMono.variable} ${geistSans.variable}`}
+      >
         {children}
       </body>
     </html>
