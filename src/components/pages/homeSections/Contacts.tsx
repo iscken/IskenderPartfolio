@@ -36,7 +36,7 @@ const Contacts = () => {
     <section className={scss.Contacts}>
       <div className="container">
         <div className={scss.content}>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form className={scss.form} onSubmit={handleSubmit(onSubmit)}>
             <input
               placeholder="username"
               type="text"
@@ -57,7 +57,9 @@ const Contacts = () => {
               type="text"
               {...register("description", { required: true })}
             />
-            <button type="submit">Submit</button>
+            <button className={scss.btnSubmin} type="submit">
+              Submit
+            </button>
           </form>
         </div>
       </div>
