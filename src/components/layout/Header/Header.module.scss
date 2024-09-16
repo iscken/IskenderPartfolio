@@ -1,0 +1,50 @@
+.Header {
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  background: #490049;
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      .logo {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: green;
+          svg {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      .nav {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          li {
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+            }
+          }
+        }
+      }
+      .resume {
+      }
+    }
+  }
+}

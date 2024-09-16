@@ -1,0 +1,28 @@
+.Contacts {
+  padding-top: 20vh;
+  .content {
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      input {
+        padding: 8px 10px;
+        width: 321px;
+        height: 35px;
+      }
+      .btnSubmin {
+        padding: 10px 20px;
+        width: 321px;
+        height: 43px;
+        font-size: 20px;
+      }
+      .btnSubmin:hover {
+        border: 2px solid white;
+        border-radius: 20px;
+        background: rgba(163, 163, 163, 0.422);
+      }
+    }
+  }
+}
