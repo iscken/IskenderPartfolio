@@ -9,15 +9,17 @@ const BurgerButton = () => {
   return (
     <div className={scss.BurgerButton} onClick={() => setIsOpen(!isOpen)}>
       <div className={scss.content}>
-        {!module ? (
-          <span onClick={() => setModule(true)} className={scss.span}>
-            ...
-          </span>
-        ) : (
-          <span onClick={() => setModule(false)} className={scss.span}>
-            ❌
-          </span>
-        )}
+        <div className={scss.menu}>
+          {!module ? (
+            <span onClick={() => setModule(true)} className={scss.span}>
+              ...
+            </span>
+          ) : (
+            <span onClick={() => setModule(false)} className={scss.spanx}>
+              ❌
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );

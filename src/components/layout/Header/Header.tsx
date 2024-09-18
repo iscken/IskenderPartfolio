@@ -35,7 +35,7 @@ const Header = () => {
           </div>
           <div className={scss.right}>
             {!isMobile ? (
-              <div>
+              <div className={scss.mobile_content}>
                 <nav className={scss.nav}>
                   <ul>
                     {links.map((item, index) => (
@@ -48,7 +48,7 @@ const Header = () => {
                   </ul>
                 </nav>
                 <div className={scss.resume}>
-                  <button>resume</button>
+                  <button className={scss.resumeBtn}>Resume</button>
                 </div>
               </div>
             ) : (

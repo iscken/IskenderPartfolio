@@ -43,7 +43,25 @@
           }
         }
       }
+      .mobile_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
       .resume {
+        .resumeBtn {
+          padding: 8px 10px;
+          border: 1px solid rgb(68, 68, 251);
+          border-radius: 5px;
+          color: rgba(31, 31, 255, 0.769);
+        }
+        .resumeBtn:hover {
+          color: rgba(31, 31, 255, 0.524);
+          -webkit-box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
+          -moz-box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
+          box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
+        }
       }
     }
   }
