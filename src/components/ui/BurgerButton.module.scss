@@ -1,5 +1,12 @@
 .BurgerButton {
-  .span {
-    font-size: 50px;
+  .menu {
+    margin-right: 15px;
+    .span {
+      font-size: 30px;
+      margin-left: 30px;
+    }
+    .spanx {
+      font-size: 23px;
+    }
   }
 }
