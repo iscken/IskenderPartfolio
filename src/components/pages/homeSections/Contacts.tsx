@@ -33,7 +33,7 @@ const Contacts = () => {
   };
 
   return (
-    <section className={scss.Contacts}>
+    <section id="Contacts" className={scss.Contacts}>
       <div className="container">
         <div className={scss.content}>
           <form className={scss.form} onSubmit={handleSubmit(onSubmit)}>

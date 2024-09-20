@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   padding: 15px 0;
-  background: #490049;
+  background: black;
   .content {
     position: relative;
     display: flex;
@@ -39,6 +39,11 @@
               align-items: center;
               justify-content: center;
               gap: 8px;
+              cursor: pointer;
+              transition: 0.4s;
+              &.active {
+                color: blue;
+              }
             }
           }
         }
@@ -61,6 +66,31 @@
           -webkit-box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
           -moz-box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
           box-shadow: 1px 0px 37px 3px rgba(39, 141, 219, 0.36);
+        }
+        .modal {
+          position: relative;
+          color: black;
+          background: white;
+          .ResumeModal {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            text-align: start;
+            padding-left: 10px;
+            width: 170px;
+            height: 150px;
+            border-radius: 10px;
+            background: rgb(88, 199, 255);
+            color-scheme: dark;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a {
+              color: #490049;
+            }
+          }
         }
       }
     }
