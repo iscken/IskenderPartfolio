@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className={scss.About}>
       <div className="container">
         <div className={scss.content}>
-          <h2>About</h2>
+          <h2>Abouut</h2>
         </div>
       </div>
     </section>
