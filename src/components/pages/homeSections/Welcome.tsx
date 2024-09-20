@@ -2,9 +2,11 @@ import scss from "./Welcome.module.scss";
 
 const Welcome = () => {
   return (
-    <section className={scss.Welcome}>
+    <section id="welcome" className={scss.Welcome}>
       <div className="container">
-        <div className={scss.content}>Welcome</div>
+        <div className={scss.content}>
+          <h1>Welcome</h1>
+        </div>
       </div>
     </section>
   );
