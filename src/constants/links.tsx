@@ -9,6 +9,7 @@ const ScrollOptions = {
   duration: 300,
   activeClass: "active",
 };
+
 export const links = [
   {
     name: "Welcome",

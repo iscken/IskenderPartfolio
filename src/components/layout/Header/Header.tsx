@@ -11,11 +11,11 @@ import { useHeaderStore } from "@/stores/useHeaderStore";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(true);
-  const [resumeModal, setResumeModal] = useState(false);
+  const [resumeModal, setResumeModal] = useState(true);
   const { fixScroll } = useHeaderStore();
 
   const changeIsMobile = () => {
-    setIsMobile(window.innerWidth <= 768);
+    setIsMobile(window.innerWidth <= 468);
   };
   useEffect(() => {
     changeIsMobile();
@@ -73,7 +73,7 @@ const Header = () => {
                     Resume
                   </button>
                   <div className={scss.modal}>
-                    {resumeModal ? (
+                    {!resumeModal ? (
                       <div className={scss.ResumeModal}>
                         <Link href="/MyResume">
                           <p className={scss.pResume}>My Resume</p>
